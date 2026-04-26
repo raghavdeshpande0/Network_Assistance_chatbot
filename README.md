@@ -9,51 +9,14 @@ A neobrutalist AI-powered network diagnostics platform built with Next.js, featu
 - Intelligent responses for DNS, WiFi, ping, firewall, VPN issues
 - Structured step-by-step solutions
 
-### Network Diagnostic Tools
-- **Ping Test** - Check host reachability and latency
-- **DNS Lookup** - Resolve domains and inspect DNS records
-- **Port Scanner** - Scan ports and detect services
-- **Traceroute** - Trace packet routes
-- **Whois Lookup** - Query domain registration details
-- **Speed Test** - Measure bandwidth and latency
-
-### Additional Diagnostics
-- **IP Info / Geo Lookup** - Location and ISP information
-- **SSL/TLS Inspector** - Certificate validation and details
-- **HTTP Header Inspector** - Request/response header analysis
-- **Error Explainer** - AI-powered error diagnosis
-- **CIDR Calculator** - Network range calculations
-
 ## Tech Stack
 
 - **Frontend**: Next.js 16 + React 19 + TypeScript
 - **UI**: Neobrutalist design with Tailwind CSS v4
 - **AI**: Hugging Face models via API
 - **Backend**: Node.js with Express-like API routes
-- **Infrastructure**: Docker + Kafka (optional)
+- **Infrastructure**: FastAPI integration
 
-## File Structure
-
-```
-app/
-├── api/
-│   ├── chat/route.ts          # AI chatbot endpoint
-│   └── tools/route.ts         # Unified diagnostic tools API
-├── layout.tsx                 # Root layout with dark mode
-└── page.tsx                   # Main page
-
-components/
-├── header.tsx                 # Header with dark theme toggle
-├── hero.tsx                   # Large hero section
-├── chat-interface.tsx         # Full-screen chat UI
-├── network-tools.tsx          # Expandable tool cards
-├── diagnostic-tools.tsx       # Additional diagnostic cards
-└── footer.tsx                 # Footer
-
-lib/
-├── kafka.ts                   # Kafka producer client (optional)
-└── utils.ts                   # Utility functions
-```
 
 ## Quick Start
 
@@ -65,16 +28,6 @@ pnpm install
 pnpm dev
 
 # Access at http://localhost:3000
-```
-
-## Docker Deployment
-
-```bash
-# Build image
-docker build -t netfix:latest .
-
-# Run with Docker Compose
-docker-compose up -d
 ```
 
 ## Environment Variables
