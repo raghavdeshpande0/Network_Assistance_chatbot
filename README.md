@@ -18,7 +18,8 @@ A neobrutalist AI-powered network diagnostics platform built with Next.js, featu
 - **Infrastructure**: FastAPI integration
 
 ## Netfix Architecture 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1487e637-36f7-414f-826e-a57130a1356c" />
+<img width="1407" height="768" alt="image" src="https://github.com/user-attachments/assets/9dde9641-f531-4f75-affc-cdb7261079a3" />
+
 
 ## Quick Start
 
